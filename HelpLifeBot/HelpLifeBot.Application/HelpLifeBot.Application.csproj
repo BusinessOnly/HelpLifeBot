@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="9.0.6" />
+    <PackageReference Include="MentKit.Paging" Version="4.0.0" />
+    <PackageReference Include="MentKit.ReadModels" Version="4.0.0" />
+    <PackageReference Include="MentKit.ReadModels.EntityFramework" Version="4.0.0" />
+    <PackageReference Include="MentKit.UseCases" Version="4.0.0" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="6.0.3" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="6.0.3" />
+    <PackageReference Include="NLog.Database" Version="6.0.3" />
+    <PackageReference Include="NLog" Version="6.0.3" />
+    <PackageReference Include="Npgsql" Version="9.0.2" />
+    <PackageReference Include="Telegram.Bot" Version="22.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelpLifeBot.Domain\HelpLifeBot.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
