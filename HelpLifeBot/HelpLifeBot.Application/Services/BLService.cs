@@ -61,7 +61,7 @@ namespace HelpLifeBot
         {
             await AddUserActionAsync(userId, UserActionCode.Help);
             await _tgService.SendMessageAsync(userId,
-                "Я помогу тебе во всём." +
+                "Я помогу тебе во всём!!" +
                 "\n" +
                 "\nМожешь задавать разные вопросы о жизни прямо в БОТа, например:" +
                 "\n" +
@@ -115,10 +115,10 @@ namespace HelpLifeBot
 
             var answers = new string[]
             {
-                "Ну тут без доната не разобрать",
-                "Ничего не понятно но очень интересно",
-                "Странный вопрос",
-                "Интересный вопрос"
+                "Ну тут без доната не разобрать!",
+                "Ничего не понятно но очень интересно!",
+                "Странный вопрос!",
+                "Интересный вопрос!"
             };
 
             await _tgService.SendMessageAsync(userId,
