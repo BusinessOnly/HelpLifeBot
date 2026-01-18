@@ -67,7 +67,8 @@ namespace HelpLifeBot
                 "\n" +
                 "\nКак перейти через дорогу?" +
                 "\nКак вызвать лифт?" +
-                "\nКак хорошо учиться?");
+                "\nКак хорошо учиться?" +
+                "\nКак узнать год своего рождения?");
         }
 
         private async Task ProcessDefaultAsync(long userId, string? text)
@@ -112,7 +113,12 @@ namespace HelpLifeBot
                     "Не ленись, делай уроки!");
                 return;
             }
-
+            if (text == "Как узнать год своего рождения?")
+            {
+                await _tgService.SendMessageAsync(userId,
+                    "найди паспорт, справа от твоей фотографии будет дата, последние 4 цифры - год твоего рождения)");
+                return;
+            }
             var answers = new string[]
             {
                 "Ну тут без доната не разобрать!",
